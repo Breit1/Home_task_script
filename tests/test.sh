@@ -1,4 +1,9 @@
-
-source /home/breit/Documents/main.sh /home/breit/otpr/ /home/breit/proverka/
-
+../scripts/main.sh
+if [[ $? == "1" ]]
+then 
+	echo "Тест пройден" 
+else 
+	echo "Ошибка" 
+	exit 1
+fi
 
