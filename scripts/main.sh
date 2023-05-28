@@ -22,16 +22,16 @@
             echo "Директории не существует, создаём $2 и копируем туда"
             mkdir -p $2
     fi
-
-prefix=$3 
-    for file in "$1"/*
-            do
-                if [[ -f "$file" ]]
-                then
-                    echo "Копируем файл $file"
-                    cp "$file" "$2/$prefix$(basename "$file")"
-                fi
-            done
+#добавление приставки
+    prefix=$3 
+        for file in "$1"/*
+                do
+                    if [[ -f "$file" ]]
+                    then
+                        echo "Копируем файл $file"
+                        cp "$file" "$2/$prefix$(basename "$file")"
+                    fi
+                done
 
 
 #конец
