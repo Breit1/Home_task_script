@@ -31,6 +31,7 @@ jobs:
           chmod +x main.sh
           cd ../tests
           chmod +x test.sh 
-          source test.sh
+          ./test.sh
+          ./test_no_arg.sh
 
  
